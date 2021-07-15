@@ -1,0 +1,29 @@
+.filter {
+  position: relative;
+  flex: 1;
+}
+
+.filter i {
+  position: absolute;
+  font-size: 1rem;
+  left: .5rem;
+  top: calc(50% - .5rem);
+  block-size: 1rem;
+}
+
+.filter input {
+  outline-style: none;
+  background: transparent;
+  font: var(--button);
+  color: var(--gray10);
+  border: none;
+  margin-inline-start: .2rem;
+}
+
+.filter:focus-within i {
+  color: var(--white);
+}
+
+.filter input::-webkit-input-placeholder {
+  color: var(--gray10);
+}

@@ -1,0 +1,54 @@
+:root {
+  --sidebarInlineSize: 15rem;
+  --minBlockSize: 37.5rem;
+  --minInlineSize: 48rem;
+  --bottomSize: 5.5rem;
+}
+
+.layout {
+  min-inline-size: var(--minInlineSize);
+}
+
+.layout-sidebar {
+  inline-size: var(--sidebarInlineSize);
+  block-size: calc(100vh - var(--bottomSize));
+  min-block-size: var(--minBlockSize);
+  overflow: auto;
+  flex-shrink: 0;
+  background: var(--gray60);
+}
+
+.layout-main {
+  block-size: calc(100vh - var(--bottomSize));
+  overflow: auto;
+  min-block-size: var(--minBlockSize);
+}
+
+.layout-bottom {
+  flex: 1;
+  block-size: var(--bottomSize);
+}
+
+.layout-block {
+  display: flex;
+}
+
+.layout-mainArtist {
+  block-size: calc(100vh - var(--bottomSize));
+  overflow: auto;
+  min-block-size: var(--minBlockSize);
+  background: linear-gradient(181.17deg, rgba(47, 47, 47, 0) -35.3%, #171717 66.2%), url("../assets/images/high-paw-img.png");
+  inline-size: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layout-mainAlbum {
+  block-size: calc(100vh - var(--bottomSize));
+  inline-size: 100vw;
+  overflow: auto;
+  min-block-size: var(--minBlockSize);
+  background: var(--gray50);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

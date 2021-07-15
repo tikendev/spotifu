@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotifu - High Paw</title>
+  <link rel="stylesheet" href="../spotifu/css/index.css">
+  <link rel="shortcut icon" href="./assets/images/favicon.png">
+</head>
+
+<body class="body">
+  <div class="layout">
+    <div class="layout-block">
+      <div class="layout-sidebar">
+        <div class="sidebar">
+          <header class="logo" role="banner">
+            <a href="../spotifu/index.html" aria-current="page">
+              <img src="./assets/images/spotifu-logo.png" class="logo-image" width="112" height="32"
+                alt="Logo de Spotifu">
+            </a>
+          </header>
+
+          <nav class="menu" aria-label="principal">
+            <ul class="menu-list">
+              <li class="menuItem">
+                <a href="../spotifu/index.html" class="link" aria-current="page">
+                  <i class="icon-home" aria-hidden="true"></i>
+                  <span>Inicio</span>
+                </a>
+              </li>
+              <li class="menuItem">
+                <a href="/" class="link" aria-current="page">
+                  <i class="icon-search is-active" aria-hidden="true"></i>
+                  <span>Buscar</span>
+                </a>
+              </li>
+              <li class="menuItem">
+                <a href="/" class="link" aria-current="page">
+                  <i class="icon-creditCard is-active" aria-hidden="true"></i>
+                  <span>Premium</span>
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+
+          <nav class="list" aria-labelledby="library-navigation">
+            <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+            <ul class="list-content">
+              <li class="list-item">
+                <a href="#" class="link">Creada para ti</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Escuchado recientemente</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Tus Me Gusta</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="list" aria-labelledby="playlist-navigation">
+            <h2 class="list-title" id="playlist-navigation">Playlist</h2>
+            <ul class="list-content">
+              <li class="list-item">
+                <a href="#" class="link">Roots Reggae Music</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Rub a Dub Style</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Creada para ti</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Riddims</a>
+              </li>
+              <li class="list-item">
+                <span class="ellipsis">
+                  <a href="#" class="link">Colección de canciones de cantantes clásicos</a>
+                </span>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">New Roots</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Digital Reggae</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Rockers</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Early Dancehall</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Cool Up Records</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Soul Music</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="link">Música clásica</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="layout-mainArtist">
+        <div class="page">
+          <div class="sticky">
+            <div class="page-block">
+              <header class="header" aria-label="Barra superior y menú del usuario">
+                <div class="navigation">
+                    <button class="navigation-prev" aria-label="Volver hacia atrás" title="Volver">
+                      <a href="../spotifu/index.html">
+                        <i class="icon-arrowLeft" aria-hidden="true">
+                        </i>
+                      </a>
+                    </button>
+                    <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                      <i class="icon-arrowRight" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <form class="search" role="search" aria-label="Buscar por Artistas, canciones o pódcasts">
+                  <i class="icon-search" aria-hidden="true"></i>
+                  <input type="search" placeholder="Artistas, canciones o pódcasts">
+                </form>
+              </header>
+            </div>
+          </div>
+
+          <main class="page-block">
+            <section class="artistPage">
+              <div class="artistPageInfo">
+                <div class="artistPageInfo-title">
+                  <h1 class="artistTitle">High Paw</h1>
+                </div>
+                <div class="artistPageInfo-text">
+                  <p>Canciones más escuchadas</p>
+                  <p>20.000 SEGUIDORES</p>
+                </div>
+                <div class="artistPageInfo-button">
+                  <button class="button">Reproducir</button>
+                </div>
+              </div>
+            </section>
+            <section class="filter-section">
+              <div class="songFilter">
+                <form class="filter" role="searchbox" aria-label="Filtrar canciones">
+                  <i class="icon-search" aria-hidden="true"></i>
+                  <input type="search" name="filterSong" id="filterSong" placeholder="Filtrar">
+                </form>
+              </div>
+            </section>
+            <section class="song-section">
+              <table class="songTable" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th>TÍTULO</th>
+                    <th>ARTISTA</th>
+                    <th>ÁLBUM</th>
+                    <th>
+                      <i class="icon-calendar"></i>
+                    </th>
+                    <th>
+                      <i class="icon-clock"></i>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="icon-play"></i>
+                    </td>
+                    <td>
+                      <i class="icon-heart"></i>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Tax Bully</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">High Paw</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Solid as The Clock</a>
+                    </td>
+                    <td>
+                      2020
+                    </td>
+                    <td>
+                      3:01
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="icon-play"></i>
+                    </td>
+                    <td>
+                      <i class="icon-heart"></i>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Burn Your Tag</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">High Paw</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Solid as The Clock</a>
+                    </td>
+                    <td>
+                      2020
+                    </td>
+                    <td>
+                      3:45
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="icon-play"></i>
+                    </td>
+                    <td>
+                      <i class="icon-heart"></i>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Real Connection</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">High Paw,</a>
+                      <a class="listLink" href="#">Tenor Mario</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Solid as The Clock</a>
+                    </td>
+                    <td>
+                      2020
+                    </td>
+                    <td>
+                      4:25
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="icon-play"></i>
+                    </td>
+                    <td>
+                      <i class="icon-heart"></i>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">A True</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">High Paw</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Solid as The Clock</a>
+                    </td>
+                    <td>
+                      2020
+                    </td>
+                    <td>
+                      3:42
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="icon-play"></i>
+                    </td>
+                    <td>
+                      <i class="icon-heart"></i>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Process</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">High Paw,</a>
+                      <a class="listLink" href="#">Payoh SoulRebel</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Solid as The Clock</a>
+                    </td>
+                    <td>
+                      2020
+                    </td>
+                    <td>
+                      3:52
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="icon-play"></i>
+                    </td>
+                    <td>
+                      <i class="icon-heart"></i>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Medical Corruption</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">High Paw</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Solid as The Clock</a>
+                    </td>
+                    <td>
+                      2020
+                    </td>
+                    <td>
+                      3:40
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="icon-play"></i>
+                    </td>
+                    <td>
+                      <i class="icon-heart"></i>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Love Code</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">High Paw</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Solid as The Clock</a>
+                    </td>
+                    <td>
+                      2020
+                    </td>
+                    <td>
+                      3:35
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="icon-play"></i>
+                    </td>
+                    <td>
+                      <i class="icon-heart"></i>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Secret Spot</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">High Paw</a>
+                    </td>
+                    <td>
+                      <a class="listLink" href="#">Solid as The Clock</a>
+                    </td>
+                    <td>
+                      2020
+                    </td>
+                    <td>
+                      2:54
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </main>
+
+        </div>
+      </div>
+    </div>
+    <div class="layout-block">
+      <footer class="layout-bottom">
+        <div class="player">
+          <div class="player-nowPlaying">
+            <div class="nowPlaying">
+              <div class="nowPlaying-cover">
+                <img src="./assets/images/solid-as-the-clock.png" width="56" height="56" alt="Vampire Killah artwork"
+                  title="Cover del álbum Solid as The Clock">
+              </div>
+              <div class="div nowPlaying-details">
+                <div class="nowPlaying-description">
+                  <a href="../spotifu/album-page.html" class="nowPlaying-title">Solid as The Clock</a>
+                  <a href="../spotifu/artist-page.html" class="nowPlaying-artist">High Paw,</a>
+                  <a href="#artist" class="nowPlaying-artist">Cool Up Records</a>
+                </div>
+                <div class="nowPlaying-actions">
+                  <button class="player-control" role="switch" aria-checked="false"
+                    aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                    <i class="icon-heart" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="player-playerControls">
+            <div class="playerControls">
+              <div class="playerControls-buttons" aria-label="Controles de reproducción">
+                <button class="buttonIcon" aria-label="Anterior" title="Anterior">
+                  <i class="icon-prev" aria-hidden="true"></i>
+                </button>
+
+                <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+                  <i class="icon-play" aria-hidden="true"></i>
+                </button>
+
+                <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
+                  <i class="icon-next" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="playerPlayback">
+                <span class="playerPlayback-progressTime">01:40</span>
+                <div class="playerPlayback-slider">
+                  <div class="slider">
+                    <div class="slider-progress">
+                      <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
+                    </div>
+                  </div>
+                </div>
+                <span class="playerPlayback-progressTime">01:40</span>
+              </div>
+            </div>
+          </div>
+          <div class="player-playerVolume">
+            <div class="playerVolume">
+              <button class="player-control" aria-label="Silenciar" aria-describedby="volumen-icon">
+                <i class="icon-volumeUp" id="volumen-icon" role="presentation" aria-label="Volumen alto"></i>
+              </button>
+              <div class="playerVolume-slider">
+                <div class="slider">
+                  <div class="slider-progress">
+                    <button class="slider-button" aria-label="Controlar el progreso de la reproducción"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

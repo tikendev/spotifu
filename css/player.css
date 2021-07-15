@@ -1,0 +1,30 @@
+@import "../css/slider.css";
+@import "../css/player-controls.css";
+@import "../css/player-playback.css";
+@import "../css/player-volume.css";
+@import "../css/now-playing.css";
+
+.player {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+  box-shadow: inset 0 1px 0 var(--gray30);
+}
+
+.player > * {
+  flex: 1;
+}
+
+.player-control {
+  border: none;
+  background: none;
+  color: var(--gray10);
+  font-size: 1rem;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.player-playerVolume {
+  display: flex;
+  justify-content: flex-end;
+}

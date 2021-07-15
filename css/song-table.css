@@ -1,0 +1,41 @@
+.songTable {
+  inline-size: 100%;
+  text-align: center;
+}
+
+.songTable th {
+  font: var(--baseFont);
+  color: var(--gray10);
+}
+
+.songTable tr {
+  block-size: 2.5rem;
+  padding: .5rem;
+}
+
+.songTable tbody {
+  border-radius: .5rem;
+  box-shadow: 0 0 0 1p transparent;
+}
+
+.songTable .listLink {
+  text-decoration: none;
+  font: var(--baseFont);
+  color: var(--white);
+}
+
+.songTable .listLink:hover {
+  text-decoration: underline;
+}
+
+.songTable tbody:hover {
+  background: var(--gray30);
+  border-radius: .1rem;
+  box-shadow: 0 0 0 1px var(--gray30);
+}
+
+.songTable tbody:enabled {
+  background: var(--gray30);
+  border-radius: .1rem;
+  box-shadow: 0 0 0 1px var(--gray30);
+}
